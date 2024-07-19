@@ -1,0 +1,142 @@
+:root {
+    --background-color: #F7EDE3;
+    --card-background-color: #FFFFFF;
+    --accent-color: #FFF7FC;
+    --text-color: #4A4A4A;
+    --title-font: 'Young Serif', serif;
+    --body-font: 'Outfit', sans-serif;
+    --border-radius: 10px;
+    --padding: 1.5rem;
+    --font-size: 1rem;
+}
+
+body {
+    background-color: var(--background-color);
+    font-family: var(--body-font);
+    color: var(--text-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    font-size: var(--font-size);
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    max-width: 650px;
+    padding: var(--padding);
+}
+
+.recipe-card {
+    background-color: var(--card-background-color);
+    border-radius: var(--border-radius);
+    padding: var(--padding);
+}
+
+.recipe-image {
+    border-radius: var(--border-radius);
+    width: 100%;
+}
+
+.recipe-title {
+    font-family: var(--title-font);
+    font-size: 2rem;
+    font-weight: 400;
+    margin: 1.5rem 0;
+}
+
+.recipe-description {
+    font-size: 1rem;
+    margin-bottom: var(--padding);
+}
+
+.preparation-time {
+    background-color: var(--accent-color);
+    padding: var(--padding);
+    border-radius: var(--border-radius);
+}
+
+.preparation-time h3 {
+    padding: 0;
+    margin: 0 0 1rem 0;
+    color: #5E2D41;
+}
+
+.preparation-time ul {
+    padding-left: var(--padding);
+    margin: 0;
+}
+
+.preparation-time li {
+    margin-top: 1rem;
+}
+
+span {
+    position: relative;
+    left: 1rem;
+}
+
+.ingredients, .instructions {
+    border-bottom: 1px solid black;
+    padding-bottom: var(--padding);
+    margin-bottom: 2rem;
+}
+
+.ingredients-title, .instructions-title, .nutrition-title {
+    font-family: var(--title-font);
+    font-size: 1.5rem;
+    color: hsl(14, 45%, 36%);
+    font-weight: 400;
+    padding: 0;
+}
+
+.ingredients ul {
+    padding-left: var(--padding);
+    margin: 0;
+}
+
+.ingredients li {
+    margin-bottom: 1rem;
+}
+
+.instructions ul {
+    padding-left: var(--padding);
+    margin: 0;
+    list-style-type: decimal;
+}
+
+.instructions li {
+    margin-bottom: 1rem;
+}
+
+.instructions li::marker {
+    color: #5E2D41;
+    font-weight: bold;
+}
+
+.nutrition-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.nutrition-table th, .nutrition-table td {
+    text-align: left;
+    padding: 1rem;
+
+}
+
+.nutrition-table th {
+    font-weight: normal;
+    padding-left: 2rem;
+}
+
+.nutrition-table td {
+    color: #5E2D41;
+    font-weight: bold;
+}
+
+.nutrition-table tr:not(:last-child) {
+    border-bottom: 1px solid black
+}
